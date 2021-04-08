@@ -51,6 +51,10 @@ html, body {
   border-radius: 15px;
 }
 
+.btn-primary:hover {
+  color: white !important;
+}
+
 .communication-form-wrapper {
   background-color: #f7f7f7;
 }
