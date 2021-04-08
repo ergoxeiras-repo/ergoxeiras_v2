@@ -2,6 +2,10 @@ html, body {
   overflow-x: hidden;
 }
 
+.toggle:after{
+  color: #313030;
+}
+
 .temp {
     width: 400px;
     height: 400px;
@@ -75,8 +79,9 @@ form textarea {
   margin-bottom: 1rem;
 }
 
-form button {
+form.btn-primary {
   margin-bottom: 1rem;
+  color: red;
 }
 
 @media screen and (min-width: 700px) {

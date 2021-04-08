@@ -31,7 +31,12 @@
 					<header id="header">
 						<a href="index.html" class="logo"><strong>Ergoxeiras</strong></a>
 						<ul class="icons">
-							<li><a href="https://www.facebook.com/Ergoxeiras-1707693459286378" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li>
+								<span style="color: black; margin-right: 0.5rem;">Ακολουθήστε μας </span>
+								<a href="https://www.facebook.com/Ergoxeiras-1707693459286378" class="icon brands fa-facebook-f">
+									<span class="label">Facebook</span>
+								</a>
+							</li>
 						</ul>
 					</header>
 
@@ -92,6 +97,7 @@
 										φλαμούρι και φέρουν ολα τρέσες οξειάς. Υπάρχει
 										δυνατότητα κατασκευής σε οποιαδήποτε διάσταση. Υπάρχει
 										δυνατότητα διάθεσης και απροετοίμαστης εικόνας.
+										<span style="visibility: hidden;">ή μασίφ ξυλεία φλαμουριού.</span>
 									</p>
 									<a href="{% url 'xuloglupth_eikona' %}" class="btn btn-primary">Δείτε την Κατηγορία</a>
 									</div>
@@ -109,24 +115,10 @@
 										Κορνίζες που μπορούν να συνδιαστούν μαζί με την εικόνα,
 										απροετοίμαστη η μη η να κατασκευαστούν πάνω στα μέτρα
 										των δικών σας έργων, ξυλόγλυπτες η μη
+										<span style="visibility: hidden;">ή μασίφ ξυλεία φλαμουριού.
+										fhdjskalhfjashflksjdfhlafdsfdsafsdfsfdfsafafdsfsfsfsdaf</span>
 									</p>
 									<a href="{% url 'korniza' %}" class="btn btn-primary">Δείτε την Κατηγορία</a>
-									</div>
-								</div>
-								<div class="card" style="width: 14rem">
-									<img
-									src="{% static 'images/wooden-carved-icon-2.jpg' %}"
-									class="card-img-top"
-									alt="..."
-									style="max-height: 200px"
-									/>
-									<div class="card-body">
-									<h5 class="card-title">Card title</h5>
-									<p class="card-text">
-										Some quick example text to build on the card title and
-										make up the bulk of the card's content.
-									</p>
-									<a href="#" class="btn btn-primary">Go somewhere</a>
 									</div>
 								</div>
 								</div>
@@ -170,7 +162,7 @@
 						<form action="" method="POST">
 						{% csrf_token %}
 						{{form}}
-						<button type="submit" class="btn btn-primary">Αποστολή</button>
+						<button type="submit" class="btn">Αποστολή</button>
 						</form>
 					</div>
 				</div>
