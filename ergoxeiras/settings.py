@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'pages',
+    'storages',
+    'django_cleanup.apps.CleanupConfig',
 ]
 
 MIDDLEWARE = [
@@ -132,3 +134,14 @@ MEDIA_ROOT = BASE_DIR.joinpath('static/images')
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+#AWS S3 BUCKETS CONFIGURATION
+AWS_ACCESS_KEY_ID = 'AKIAYGX2HOOT2PNEU7LY'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'ergoxeiras-bucket'
+AWS_S3_FILE_OVERWRITE = False
+AWS_DEFAULT_ACL = None
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+AWS_S3_HOST = 's3.eu-central-1.amazonaws.com'
+AWS_S3_REGION_NAME = 'eu-central-1'
+AWS_S3_ADDRESSING_STYLE = "virtual"

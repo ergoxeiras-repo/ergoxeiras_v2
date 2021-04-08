@@ -7,8 +7,6 @@ from .models import Image, Status
 
 def indexView(request):
     images = Image.objects.order_by('-id')[:4]
-    print("IMAGE")
-    print(images[0].image.url)
     
     if request.method == 'POST':
         form = boundForm(request)

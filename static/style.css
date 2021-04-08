@@ -40,8 +40,11 @@ html, body {
 }
 
 .btn-primary {
-  color: black;
   border: none;
+  background-color: #366DA4;
+  padding: 1rem;
+  color: white;
+  border-radius: 15px;
 }
 
 .communication-form-wrapper {
