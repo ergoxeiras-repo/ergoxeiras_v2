@@ -1,0 +1,271 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<title>Ergoxeiras</title>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, user-scalable=no"
+		/>
+		<link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
+		<link rel="stylesheet" href="{% static 'glider.min.css' %}" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<link rel="stylesheet" href="{% static 'style.css' %}" />
+	</head>
+	<body class="is-preload">
+		
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Main -->
+			<div id="main">
+				<div class="inner">
+
+					<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo"><strong>Ergoxeiras</strong></a>
+						<ul class="icons">
+							<li><a href="https://www.facebook.com/Ergoxeiras-1707693459286378" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						</ul>
+					</header>
+
+					<!-- Banner -->
+					<section id="banner">
+						<div class="content">
+							<header>
+								<h1>This will be the main header</h1>
+							</header>
+							<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.</p>
+						</div>
+						<span class="image object">
+							<img src="{% static 'images/main_image.jpg' %}" alt="" />
+						</span>
+					</section>
+
+					<!-- CATEGORIES -->
+					<section id="categories">
+						<header class="major">
+							<h2>Κατηγορίες</h2>
+						</header>
+						<div class="glider-wrapper">
+							<div class="glider-contain multiple">
+								<button class="glider-prev">
+								<i class="fa fa-chevron-left"></i>
+								</button>
+								<div class="glider">
+								<div class="card" style="width: 14rem">
+									<img
+									src="{% static 'images/wooden-carved-icon-2.jpg' %}"
+									class="card-img-top"
+									alt="..."
+									style="max-height: 200px"
+									/>
+									<div class="card-body">
+									<h5 class="card-title">Προετοιμασία Εικόνας</h5>
+									<p class="card-text">
+										Η εφαρμογή της προετοιμασίας γίνεται με την παραδοσιακή 
+										τεχνική από άριστης ποιότητας υλικά με βάση την 
+										κουνελόκολα και την κιμωλία. Τα ξύλα που 
+										χρησιμοποιούνται ειναι κόντρα πλακέ θαλάσσης, σήμυδα
+										ή μασίφ ξυλεία φλαμουριού.
+									</p>
+									<a href="{% url 'proetimasia_eikonas' %}" class="btn btn-primary">Δείτε την Κατηγορία</a>
+									</div>
+								</div>
+								<div class="card" style="width: 14rem">
+									<img
+									src="{% static 'images/wooden-carved-icon-2.jpg' %}"
+									class="card-img-top"
+									alt="..."
+									style="max-height: 200px"
+									/>
+									<div class="card-body">
+									<h5 class="card-title">Ξυλόγλυπτη Εικόνα</h5>
+									<p class="card-text">
+										Οι εικόνες κατασκευάζονται από άριστης ποιότητας
+										φλαμούρι και φέρουν ολα τρέσες οξειάς. Υπάρχει
+										δυνατότητα κατασκευής σε οποιαδήποτε διάσταση. Υπάρχει
+										δυνατότητα διάθεσης και απροετοίμαστης εικόνας.
+									</p>
+									<a href="{% url 'xuloglupth_eikona' %}" class="btn btn-primary">Δείτε την Κατηγορία</a>
+									</div>
+								</div>
+								<div class="card" style="width: 14rem">
+									<img
+									src="{% static 'images/wooden-carved-icon-2.jpg' %}"
+									class="card-img-top"
+									alt="..."
+									style="max-height: 200px"
+									/>
+									<div class="card-body">
+									<h5 class="card-title">Κορνίζα</h5>
+									<p class="card-text">
+										Κορνίζες που μπορούν να συνδιαστούν μαζί με την εικόνα,
+										απροετοίμαστη η μη η να κατασκευαστούν πάνω στα μέτρα
+										των δικών σας έργων, ξυλόγλυπτες η μη
+									</p>
+									<a href="{% url 'korniza' %}" class="btn btn-primary">Δείτε την Κατηγορία</a>
+									</div>
+								</div>
+								<div class="card" style="width: 14rem">
+									<img
+									src="{% static 'images/wooden-carved-icon-2.jpg' %}"
+									class="card-img-top"
+									alt="..."
+									style="max-height: 200px"
+									/>
+									<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">
+										Some quick example text to build on the card title and
+										make up the bulk of the card's content.
+									</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+									</div>
+								</div>
+								</div>
+								<button class="glider-next">
+								<i class="fa fa-chevron-right"></i>
+								</button>
+								<div id="dots" class="glider-dots"></div>
+							</div>
+						</div>
+					</section>
+
+					<!-- RECENT WORK -->
+					<section id="recent-work">
+						<header class="major">
+							<h2>Πρόσφατα Έργα</h2>
+						</header>
+						<div class="posts">
+							{% for image in images %}
+								<article data-aos="{% if forloop.counter|divisibleby:2 %}fade-left{% else %}fade-right{% endif %}">
+									<div class="image">
+										<img src="{{ image.image.url }}" alt=""/>
+										<h3>{{ image.title }}</h3>
+										<p>
+										{{ image.description }}
+										</p>
+									</div>
+								</article>
+							{% endfor %}
+						</div>
+					</section>	
+				</div>
+
+				<!-- COMMUNICATION FORM -->
+				<div id="communication-form" class="communication-form-wrapper">
+					<div class="communication-container">
+						<section>
+						<header class="major">
+							<h2>Επικοινωνίστε μαζί μας</h2>
+						</header>
+						</section>
+						<form action="" method="POST">
+						{% csrf_token %}
+						{{form}}
+						<button type="submit" class="btn btn-primary">Αποστολή</button>
+						</form>
+					</div>
+				</div>
+
+					<!-- FOOTER -->
+				<footer>
+					<div class="footer-wrapper">
+						<section class="follow-us-wrapper">
+							<div>
+							Ακολουθήστε μας<a href="https://www.facebook.com/Ergoxeiras-1707693459286378" class="icon brands fa-facebook-f"
+								><span class="label">Facebook</span></a
+							>
+							</div>
+							|
+							<div><a id="use-terms" href="">Όροι Χρήσης</a></div>
+						</section>
+						<section class="rights">
+							&copy; <script type="text/javascript">
+								document.write(new Date().getFullYear());
+							  </script> Ergoxeiras. All Rights and Lefts Reserved
+						</section>
+					</div>
+				</footer>
+			</div>
+
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<div class="inner">
+					<!-- Menu -->
+					<nav id="menu">
+						<header class="major">
+							<h2>Μενού</h2>
+						</header>
+						<ul>
+							<li><a href="#wrapper">Αρχική</a></li>
+							<li><a href="#categories">Κατηγορίες</a></li>
+							<li><a href="#recent-work">Πρόσφατα Έργα</a></li>
+							<li><a href="#communication-form">Επικοινωνία</a></li>
+						</ul>
+					</nav>
+
+					
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Scripts -->
+		<!-- Glider -->
+		<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+		crossorigin="anonymous"
+		></script>
+		<script src="{% static 'glider.min.js' %}"></script>
+		<script>
+		new Glider(document.querySelector(".glider"), {
+			slidesToShow: 2.5,
+			draggable: true,
+			dots: "#dots",
+			arrows: {
+			prev: ".glider-prev",
+			next: ".glider-next",
+			},
+			responsive: [
+			{
+				breakpoint: 75,
+				settings: {
+				slidesToShow: 1,
+				},
+			},
+			{
+				breakpoint: 750,
+				settings: {
+				slidesToShow: 2.5,
+				},
+			},
+			],
+		});
+		</script>
+
+		<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+		<script src="{% static 'assets/js/browser.min.js' %}"></script>
+		<script src="{% static 'assets/js/breakpoints.min.js' %}"></script>
+		<script src="{% static 'assets/js/util.js' %}"></script>
+		<script src="{% static 'assets/js/main.js' %}"></script>
+
+		<!-- AOS -->
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+		AOS.init({
+			offset: 250,
+			duration: 1000,
+		});
+		</script>
+
+	</body>
+</html>
