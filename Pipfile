@@ -10,6 +10,7 @@ psycopg2 = "*"
 gunicorn = "*"
 django-heroku = "*"
 django-storages = "*"
+django-cleanup = "*"
 
 [dev-packages]
 
