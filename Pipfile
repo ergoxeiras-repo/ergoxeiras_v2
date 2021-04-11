@@ -12,6 +12,7 @@ django-heroku = "*"
 django-storages = "*"
 django-cleanup = "*"
 boto3 = "*"
+django-bootstrap-breadcrumbs = "*"
 
 [dev-packages]
 
