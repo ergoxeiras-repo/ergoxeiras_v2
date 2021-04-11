@@ -23,7 +23,7 @@ def categoriesView(request):
     
     images = Image.objects.filter(category=category)
 
-    paginator = Paginator(images, 2)
+    paginator = Paginator(images, 16)
     
     page_number = request.GET.get('page')
     page_images = paginator.get_page(page_number)
