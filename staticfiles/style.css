@@ -47,6 +47,11 @@ html, body {
   border-radius: 15px;
 }
 
+#about-us {
+  width: 90%;
+  margin: 0 auto;
+}
+
 .communication-form-wrapper {
   background-color: #e6e6e6;
 }
@@ -286,8 +291,3 @@ form button:hover {
       display: none !important;
     }
   }
-
-#about-us {
-  width: 80%;
-  margin: 0 auto;
-}
