@@ -286,3 +286,8 @@ form button:hover {
       display: none !important;
     }
   }
+
+#about-us {
+  width: 80%;
+  margin: 0 auto;
+}
