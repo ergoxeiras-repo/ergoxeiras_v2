@@ -26,6 +26,10 @@ html, body {
     margin: 1.5rem;
 }
 
+.card img {
+  max-height: 300px;
+}
+
 .glider-slide img {
   width: 100%;
 }
