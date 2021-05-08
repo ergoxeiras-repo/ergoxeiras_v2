@@ -38,6 +38,16 @@ html, body {
   border-radius: 15px;
 }
 
+.card-text {
+  height: 145px;
+}
+
+@media (max-width: 750px) {
+  .card-text {
+    height: 210px;
+  }
+}
+
 .glider-slide img {
   width: 100%;
 }
