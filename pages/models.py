@@ -1,14 +1,15 @@
 from django.db import models
 
 class Status(models.TextChoices):
-    IMAGE_PERPERATION = 'proetimasia-eikonas', 'Προετοιμασία Εικόνας'
-    WOOD_CARVED_IMAGE = 'xuloglupth-eikona', 'Ξυλόγλυπτη Εικόνα'
-    IMAGE_FRAME = 'korniza', 'Κορνίζα'
-    FORHTH_EIKONA = 'forhth-eikona', 'Φορητή Εικόνα'
-    KYTIA = 'kytia', 'Κυτία'
-    LEIPSANOTHIKES = 'leipsanothikes', 'Λειψανοθήκες'
-    BYZANTINH_MIKROGLYPTIKH = 'byzantinh-mikroglyptikh', 'Βυζαντινή Μικρογλυπτική'
+    XYLOGLYPTH_FORHTH_EIKONA = 'xyloglypth-forhth-eikona', 'Ξυλόγλυπτη Φορητή Εικόνα'
+    XYLOGLYPTH_KORNIZA = 'xuloglupth-korniza', 'Ξυλόγλυπτη Κορνίζα'
+    PROETOIMASIA_EIKONAS = 'proetoimasia-eikonas', 'Προετοιμασία Εΐκόνας'
+    KYTIA_LEIPSANOTHIKES = 'kytia-leipsanothikes', 'Κυτία Λειψανοθήκες'
+    STAYROI = 'stauroi', 'Σταυροί'
+    TRIPTYXA = 'triptyxa', 'Τρίπτυχα'
+    BYZANTINA_MIKROGLYPTA = 'byzantina-mikroglypta', 'Βυζαντινά Μικρόγλυπτα'
     DIAFORES_KATASKEYES = 'diafores-kataskeyes', 'Διάφορες Κατασκευές'
+    ERGA_PELATWN = 'erga-pelatwn', 'Έργα πελατών σε ξύλα μας'
 
 class Image(models.Model):
     title = models.CharField(max_length=100)
