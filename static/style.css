@@ -63,6 +63,10 @@ html, body {
   color: white !important;
 }
 
+#about-us p {
+  color: black;
+}
+
 .communication-form-wrapper {
   background-color: #f7f7f7;
 }
