@@ -30,6 +30,16 @@ html, body {
   max-height: 300px;
 }
 
+.card-text {
+  height: 145px;
+}
+
+@media (max-width: 750px) {
+  .card-text {
+    height: 210px;
+  }
+}
+
 .glider-slide img {
   width: 100%;
 }
@@ -51,9 +61,8 @@ html, body {
   border-radius: 15px;
 }
 
-#about-us {
-  width: 90%;
-  margin: 0 auto;
+#about-us p {
+  color: black;
 }
 
 .communication-form-wrapper {
