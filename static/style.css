@@ -153,8 +153,8 @@ footer{
 }
 
 .made-by p {
-  color: black;
-  border: none;
+  color: black !important;
+  border: none !important;
 }
 
 
