@@ -150,6 +150,9 @@ footer{
 
 .made-by{
   padding: 0.5rem;
+}
+
+.made-by p {
   color: black;
   border: none;
 }
