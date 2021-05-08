@@ -149,7 +149,9 @@ footer{
 }
 
 .made-by{
-  padding: 1rem;
+  padding: 0.5rem;
+  color: black;
+  border: none;
 }
 
 
