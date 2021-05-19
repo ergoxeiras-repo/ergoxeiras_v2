@@ -157,6 +157,10 @@ footer{
   border: none !important;
 }
 
+.card-img-top {
+  height: 50%;
+}
+
 
 
 /* CUSTOMIZE THE ORIGINAL CSS */
