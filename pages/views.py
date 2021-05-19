@@ -6,7 +6,7 @@ from .forms import ContactForm
 from .models import Image, Status
 
 def indexView(request):
-    images = Image.objects.order_by('-id')[:4]
+    images = Image.objects.order_by('-id')[:6]
     
     if request.method == 'POST':
         form = boundForm(request)
