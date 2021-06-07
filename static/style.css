@@ -355,7 +355,7 @@ form button:hover {
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 992px) {
   .posts article .image img {
      height: 50vh;
    }
