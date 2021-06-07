@@ -1,6 +1,7 @@
 from django.db import models
 
-from imagekit.models import ImageSpecField
+from imagekit.models import ProcessedImageField
+# from imagekit.models import ImageSpecField
 from imagekit.processors import ResizeToFill
 
 class Status(models.TextChoices):
@@ -19,13 +20,17 @@ class Image(models.Model):
     description = models.TextField() 
     category = models.CharField(max_length=32, choices=Status.choices) 
     uploaded_at = models.DateField(auto_now_add=True, db_index=True)
-    image = models.ImageField(upload_to='images')
-    resized_image = ImageSpecField(
-        source='image',
-        processors=[ResizeToFill(500, 500)],
-        format='JPEG',
-        options={'quality': 60}
-    )
+    # image = models.ImageField(upload_to='images')
+    image = ProcessedImageField(upload_to='images',
+                                           processors=[ResizeToFill(1200, 600)],
+                                           format='JPEG',
+                                           options={'quality': 100})
+    # resized_image = ImageSpecField(
+    #     source='image',
+    #     processors=[ResizeToFill(500, 500)],
+    #     format='JPEG',
+    #     options={'quality': 60}
+    # )
 
     def __str__(self):
         return self.title
