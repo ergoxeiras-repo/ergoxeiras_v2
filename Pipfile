@@ -13,6 +13,7 @@ django-storages = "*"
 django-cleanup = "*"
 boto3 = "*"
 django-bootstrap-breadcrumbs = "*"
+django-imagekit = "*"
 
 [dev-packages]
 

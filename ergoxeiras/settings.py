@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'storages',
     'django_cleanup.apps.CleanupConfig',
     'django_bootstrap_breadcrumbs',
+    'imagekit',
 ]
 
 MIDDLEWARE = [
