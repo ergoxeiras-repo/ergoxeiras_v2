@@ -343,13 +343,14 @@ form button:hover {
   }
 }
 
-@media screen and (min-width:578) and  (max-width: 767) {
+
+@media screen and (min-width: 578px) and  (max-width: 767px) {
   .posts article .image img {
      height: 40vh;
    }
  }
 
-@media screen and (min-width:768) and  (max-width: 991px) {
+@media screen and (min-width: 768px) and  (max-width: 991px) {
  .posts article .image img {
     height: 40vh;
   }
