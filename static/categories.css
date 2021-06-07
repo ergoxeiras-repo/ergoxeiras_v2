@@ -13,6 +13,15 @@
     padding-top:40px;
     color:inherit;
   }
+
+  .photo-gallery h3 {
+    color: black;
+  }
+
+  .photo-gallery .item:hover {
+    color: black;
+    text-decoration: none
+  }
   
   @media (max-width:767px) {
     .photo-gallery h2 {
