@@ -18,6 +18,10 @@
     color: black;
   }
 
+  .img-fluid {
+    border-radius: 5px;
+  }
+
   .photo-gallery .item:hover {
     color: black;
     text-decoration: none !important;
