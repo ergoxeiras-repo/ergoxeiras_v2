@@ -49,8 +49,8 @@
                                             <div class="row photos">
 												{% for image in page_images %}
 													<div class="col-sm-6 col-md-4 col-lg-3 item">
-														<a href="{{ resized_image.image.url }}" data-lightbox="photos">
-															<img class="img-fluid" src="{{ resized_image.image.url }}">
+														<a href="{{ image.resized_image.url }}" data-lightbox="photos">
+															<img class="img-fluid" src="{{ image.resized_image.url }}">
 															<h3>{{ image.title }}</h3>
 															<p>{{ image.description }}</p>
 														</a>
