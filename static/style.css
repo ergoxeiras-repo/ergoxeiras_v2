@@ -342,3 +342,21 @@ form button:hover {
     height: 330px;
   }
 }
+
+@media screen and (min-width:578) and  (max-width: 767) {
+  .posts article .image img {
+     height: 40vh;
+   }
+ }
+
+@media screen and (min-width:768) and  (max-width: 991px) {
+ .posts article .image img {
+    height: 40vh;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .posts article .image img {
+     height: 50vh;
+   }
+ }
